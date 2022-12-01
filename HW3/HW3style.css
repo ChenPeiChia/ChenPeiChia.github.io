@@ -1,0 +1,35 @@
+body{
+		background-color: sandybrown;
+		}
+	#b{
+		font-family: arial, helvetica;
+		font-weight: bold;
+		color:indianred;
+		margin-left:auto;
+		font-size: 30px}
+	.white{
+		font-family: arial, helvetica;
+		font-size: 22px;
+		color: sandybrown;
+		margin-Left:40px}
+	div{
+		border:1px black;
+		border-style: hidden;
+		margin-left: auto;
+		margin-bottom: 1%;
+		margin-right: auto;
+	}
+	.align{
+		text-align: center;
+	}
+	
+	.floated{
+		float: left;
+	}
+	.switch{
+		display: block;
+	}
+	.clear{
+		clear: both;
+
+	}
