@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+		var x;
+		var rand=Math.floor((Math.random()*10)+1);
+		
+		x=window.prompt("please enter your the number you guess between 1 and 10");
+		
+		if (parseInt(x)==parseInt(rand))
+			{document.body.style.backgroundColor="lightgreen";
+			document.writeln("<h1>Right Answer!!!You are good at this:)</h1>");}
+		if(parseInt(x)!=parseInt(rand))
+			{document.body.style.backgroundColor="red";
+			document.writeln("<h1>Wrong Answer!!!Try again!</h1>");}
+	</script>
+	<br>
+</body>
+</html>
