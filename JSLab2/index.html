@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>Rolling Dice</head>
+<body>
+	
+	<form action="#">
+		<input id="rollButton" type="button" value="Roll Dice">
+	</form>
+	<ol>
+	<li><img id="die1" src="die1.png" alt="blank image"></li>
+	<li><img id="die2" src="die1.png" alt="blank image"></li>
+	<li><img id="die3" src="die1.png" alt="blank image"></li>
+	<li><img id="die4" src="die1.png" alt="blank image"></li>
+	<li><img id="die5" src="die1.png" alt="blank image"></li>
+	<li><img id="die6" src="die1.png" alt="blank image"></li>
+	<li><img id="die7" src="die1.png" alt="blank image"></li>
+	<li><img id="die8" src="die1.png" alt="blank image"></li>
+	<li><img id="die9" src="die1.png" alt="blank image"></li>
+	<li><img id="die10" src="die1.png" alt="blank image"></li>
+	<li><img id="die11" src="die1.png" alt="blank image"></li>
+	<li><img id="die12" src="die1.png" alt="blank image"></li>
+	</ol>
+</body>
+<script>
+	var die1Image;
+	var die2Image;
+	var die3Image;
+	var die4Image;
+
+	function start()
+	{
+		var button=document.getElementById("rollButton");
+		button.addEventListener("click", rollDice, false);
+		die1Image=document.getElementById("die1");
+		die2Image=document.getElementById("die2");
+		die3Image=document.getElementById("die3");
+		die4Image=document.getElementById("die4");
+
+	}
+	function rollDice()
+	{
+		setImage( die1Image );
+		setImage( die2Image );
+		setImage( die3Image );
+		setImage( die4Image );
+	}
+	function setImage(dieImg)
+	{
+		var dieValue= Math.floor(1+Math.random()*6);
+		dieImg.setAttribute("src", "die" +parseInt(dieValue)+ ".png");
+		dieImg setAttribute("alt", "die image with"+ parseInt(dieValue)+ " spot(s)");
+	} 
+	window.addEventListener("load", start);
+</script>
+</html>
